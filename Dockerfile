@@ -1,4 +1,4 @@
-FROM node:6.2.2
+FROM node:latest
 
 RUN mkdir /src
 WORKDIR /src
@@ -10,4 +10,4 @@ ADD ./app /src
 
 EXPOSE 3000
 
-CMD token=${SLACK_API_TOKEN} node slack_bot.js
+CMD node index.js
