@@ -1,0 +1,7 @@
+web:
+  build: .
+  volumes:
+    - "./app:/src/app"
+  ports:
+    - "3001:3000"
+  env_file: .env
